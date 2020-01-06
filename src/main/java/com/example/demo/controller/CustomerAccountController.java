@@ -21,7 +21,7 @@ import com.example.demo.model.CustomerAccount;
 import com.example.demo.repository.CustomerAccountRepositoryImpl;
 
 @RestController
-public class WebController {
+public class CustomerAccountController {
 
 	@Autowired
 	private CustomerAccountRepositoryImpl customerAccountRepositoryImpl;
@@ -50,7 +50,7 @@ public class WebController {
 		return new ResponseEntity<CustomerAccount>(customerAccount, HttpStatus.OK);
 	}
 
-	@PutMapping("/update")
+	@PutMapping("/update/{id}")
 	@ResponseBody
 	public ResponseEntity<CustomerAccount> update(@RequestBody CustomerAccount customerAccount) {
 		if (customerAccount != null) {
