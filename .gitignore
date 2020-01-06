@@ -1,5 +1,4 @@
 HELP.md
-target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
@@ -35,7 +34,6 @@ build/
 *.dmg
 *.gz
 *.iso
-*.jar
 *.rar
 *.tar
 *.zip
@@ -51,7 +49,6 @@ build/
 
 ### Maven ###
 
-target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
